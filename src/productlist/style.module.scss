@@ -1,0 +1,26 @@
+$theme-white-color: #ffffff;
+$theme-light-grey-color: #F7F7F7;
+$radius39: 39px;
+$theme-secondary-color: #8021F9;
+
+.productlist{
+  position: fixed;
+  left: 0px;
+  top: 72px;
+  z-index: 4;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 20px;
+  padding: 32px 0px;
+  transition: all 0.3s ease 0s;
+  background: rgb(255, 255, 255);
+}
+.show{
+  background:$theme-secondary-color ;
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+  height: 100vh;
+}

@@ -1,0 +1,51 @@
+$radius4: 4px;
+$radius6: 6px;
+$radius7: 7px;
+$radius8: 8px;
+$radius12: 12px;
+$radius16: 16px;
+$radius28: 28px;
+$radius39: 39px;
+$radius42: 42px;
+$radius44: 44px;
+$radius100: 100px;
+
+//color
+$theme-red-color: #F01313;
+$theme-dark-color: #1A191C;
+$theme-grey-color: #9B99A8;
+$theme-green-color: #5DB41A;
+$theme-white-color: #ffffff;
+$theme-orange-color: #FF8A00;
+$theme-light-violet: #E4E6FD;
+$theme-primary-color: #2029F9;
+$theme-secondary-color: #8021F9;
+$theme-dark-grey-color: #726F85;
+$theme-dark-blue-color: #150E40;
+$theme-light-grey-color: #F7F7F7;
+$theme-primary-dark-color: #2029C8;
+$theme-lightblue-grey-color: #E1E2FE;
+
+//gradients
+$primary-gradient: linear-gradient(120.9deg, #2029F9 34.15%, #7F20F9 68.94%);
+$secondary-gradient: linear-gradient(315deg, #FF8A01 16.49%, #F01313 62.23%);
+$btnmenu-gradient:linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+
+
+.navitem{
+  width: 100%;
+}
+.arrow{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}

@@ -1,0 +1,18 @@
+$theme-white-color: #ffffff;
+$color-gray:rgba(0, 0, 0, 0.1);
+$primary-gradient: linear-gradient(120.9deg, #2029F9 34.15%, #7F20F9 68.94%);
+$btnmenu-gradient:linear-gradient(0deg, #FFFFFF, #FFFFFF);
+.menuwrap{
+  position: fixed;
+  left: 0px;
+  top: 72px;
+  z-index: 4;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 20px;
+  padding: 32px 0px;
+  transition: all 0.3s ease 0s;
+  background: rgb(255, 255, 255);
+}

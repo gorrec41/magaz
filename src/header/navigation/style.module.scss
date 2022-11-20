@@ -1,0 +1,21 @@
+$theme-white-color: #ffffff;
+$color-gray:rgba(0, 0, 0, 0.1);
+$theme-dark-color: #1A191C;
+$primary-gradient: linear-gradient(120.9deg, #2029F9 34.15%, #7F20F9 68.94%);
+$btnmenu-gradient:linear-gradient(0deg, #FFFFFF, #FFFFFF);
+.navlist{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  .navlink{
+    color: $theme-dark-color;
+    ;
+  }
+  .icon{
+    margin-left: 6px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
