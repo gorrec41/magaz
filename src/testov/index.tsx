@@ -1,19 +1,18 @@
 import st from './style.module.scss';
 
-interface propsint{
-    tes:boolean
+interface typcl{
+    
+    clikStyle:(d:boolean)=>void
 }
-
-function Testov(prec:propsint){
-        console.log(prec.tes);
-        
+function Btn(clickS:typcl){
+   
+    
    
     return( 
-        <label className={st.searchlabel} htmlFor="search-value">
-            <input className={st.searchinput} id="search-value" type="text" placeholder="Поиск по каталогу" />
-            {/* required="" */}
-        </label>
+        <button className={st.btnmenu}  onClick={(s)=>clickS.clikStyle(!s)}>
+           <span className={st.btnspan}></span>
+           Каталог
+        </button>
        )
-   
-}
-export default Testov
+   }
+export default Btn

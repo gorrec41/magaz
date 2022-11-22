@@ -1,6 +1,8 @@
 $theme-white-color: #ffffff;
 $theme-light-grey-color: #F7F7F7;
 $radius39: 39px;
+$theme-secondary-color: #8021F9;
+$primary-gradient: linear-gradient(120.9deg, #2029F9 34.15%, #7F20F9 68.94%);
 .header{
     padding: 12px 0;
     position: fixed;
@@ -62,4 +64,66 @@ $radius39: 39px;
       align-items: center;
       justify-content: flex-start;
     }
+    .productlist{
+      position: fixed;
+      left: 0px;
+      top: 200px;
+      z-index: 4;
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(50px);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 20px;
+      padding: 32px 0px;
+      transition: all 0.3s ease 0s;
+      background: rgb(95, 38, 38);
+    }
+    .prpdshow{
+      background:$theme-secondary-color ;
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0px);
+      height: 100vh;
+    }
+  }
+  .btnspan{
+    margin-right: 15px;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 4px;
+    background: $primary-gradient;
+    &::before,
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      height: inherit;
+      border-radius: inherit;
+      background: $primary-gradient;
+    }
+    &::after{
+      top: -6px
+    }
+    &::before{
+      top: 6px
+    }
+    
+  }
+  .show{
+    background: $theme-white-color;
+    &::after{
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::before{
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
   }

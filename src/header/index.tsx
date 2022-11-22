@@ -1,12 +1,19 @@
+import { useState,useRef } from 'react';
 import st from './style.module.scss'
 import { Link} from "react-router-dom";
 import Logo from './logo';
 import Menu from './menu';
 import Search from '../search';
 import Nav from './navigation';
+import ProductList from '../productlist';
+
+
 
 function Header(){
-
+   const[styleMenu,setStyleMenu]=useState(false)
+    const ref=useRef(st.productlist)
+    console.log(styleMenu);
+    
     return( 
         <header className={st.header}>
             <div className={st.container}>
@@ -16,7 +23,9 @@ function Header(){
                             <Logo/>
                         </Link>
                         <div className={st.searchmenu}>
-                            <Menu/>
+                            <Menu menuShow={()=>{setStyleMenu(!styleMenu)}}
+                                    menur={styleMenu}
+                                />
                             <Search/>
                         </div>
                     </div>
@@ -25,6 +34,9 @@ function Header(){
                     </div>
                 </div>
             </div>
+            {/* <ProductList
+                styleProd={ref.current}
+            /> */}
         </header>
     )
 }
