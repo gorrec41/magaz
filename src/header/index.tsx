@@ -12,7 +12,6 @@ import ProductList from '../productlist';
 function Header(){
    const[styleMenu,setStyleMenu]=useState(false)
     const ref=useRef(st.productlist)
-    console.log(styleMenu);
     
     return( 
         <header className={st.header}>
@@ -34,9 +33,9 @@ function Header(){
                     </div>
                 </div>
             </div>
-            {/* <ProductList
-                styleProd={ref.current}
-            /> */}
+            <ProductList
+                styleProd={styleMenu}
+            />
         </header>
     )
 }

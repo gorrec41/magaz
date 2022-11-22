@@ -11,9 +11,7 @@ function App() {
       <div className='wrapper'>
         <div className='content'>
           <Header/>
-         <ProductList
-          // prod={true}
-         />
+       
         </div>
       </div>
     </div>
